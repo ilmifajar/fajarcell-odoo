@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+    <!-- ilmimart.supplier tree view -->
+    <record id="ilmimart_supplier_view_tree" model="ir.ui.view">
+        <field name="name">daftar supplier</field>
+        <field name="model">ilmimart.supplier</field>
+        <field name="arch" type="xml">
+            <tree>
+                <field name="name"/>
+                <field name="alamat"/>
+                <field name="no_telp"/>
+                <field name="barang_id"/>
+            </tree>
+        </field>
+    </record>
+
+    <!-- ilmimart.supplier form view -->
+    <record id="ilmimart_supplier_view_form" model="ir.ui.view">
+        <field name="name">form supplier</field>
+        <field name="model">ilmimart.supplier</field>
+        <field name="arch" type="xml">
+            <form string="">
+                <sheet>
+                    <group>
+                       <field name="name"/>
+                       <field name="alamat"/>
+                       <field name="no_telp"/>
+                    </group>
+                    <group name="barang" string="barang">
+                        <field name="barang_id"/>
+                    </group>
+                </sheet>
+            </form>
+        </field>
+    </record>
+
+    <!-- ilmimart.supplier action window -->
+    <record id="ilmimart_supplier_action" model="ir.actions.act_window">
+        <field name="name">daftar supplier</field>
+        <field name="type">ir.actions.act_window</field>
+        <field name="res_model">ilmimart.supplier</field>
+        <field name="view_mode">tree,form</field>
+    </record>
+
+    <!-- This Menu Item must have a parent and an action -->
+    <menuitem id="ilmimart_supplier_menu_act" name="supplier" 
+                                              parent="ilmimart_menu_root" 
+                                              action="ilmimart_supplier_action" 
+                                              sequence="40"/>
+
+</odoo>

@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+    <!-- ilmimart.penjualan tree view -->
+    <record id="ilmimart_penjualan_view_tree" model="ir.ui.view">
+        <field name="name">list penjualan</field>
+        <field name="model">ilmimart.penjualan</field>
+        <field name="arch" type="xml">
+            <tree>
+                <field name="name"/>
+                <field name="nama_pembeli"/>
+                <field name="tgl_penjualan"/>
+                <field name="total_bayar"/>
+            </tree>
+        </field>
+    </record>
+
+    <!-- ilmimart.penjualan form view -->
+    <record id="ilmimart_penjualan_view_form" model="ir.ui.view">
+        <field name="name">form penjualan</field>
+        <field name="model">ilmimart.penjualan</field>
+        <field name="arch" type="xml">
+            <form string="form penjualan">
+                <sheet>
+                    <group>
+                        <field name="name"/>
+                        <field name="nama_pembeli"/>
+                        <field name="tgl_penjualan"/>
+                        <field name="total_bayar"/>
+                    </group>
+                    <group name="daftarbarang" string="daftar barang">
+                        <field name="detailpenjualan_ids">
+                            <tree editable='bottom'>
+                                <field name="barang_id"/>
+                                <field name="harga_satuan"/>
+                                <field name="qty"/>
+                                <field name="subtotal" sum="total"/>
+                            </tree>
+                        </field>
+                    </group>
+                </sheet>
+            </form>
+        </field>
+    </record>
+
+    <!-- ilmimart.penjualan action window -->
+    <record id="ilmimart_penjualan_action" model="ir.actions.act_window">
+        <field name="name">penjualan</field>
+        <field name="type">ir.actions.act_window</field>
+        <field name="res_model">ilmimart.penjualan</field>
+        <field name="view_mode">tree,form</field>
+    </record>
+
+    <!-- This Menu Item must have a parent and an action -->
+    <menuitem id="penjualan_view_menu_act" 
+              name="penjualan" 
+              parent="ilmimart_transaksi_menu_categ" 
+              action="ilmimart_penjualan_action" 
+              sequence="10"/>
+
+</odoo>

@@ -1,0 +1,10 @@
+id,name,model_id:id,group_id:id,perm_read,perm_write,perm_create,perm_unlink
+access_ilmimart_kelompokbarang,access.ilmimart.kelompokbarang,model_ilmimart_kelompokbarang,,1,1,1,1
+access_ilmimart_barang,access.ilmimart.barang,model_ilmimart_barang,,1,1,1,1
+access_ilmimart_person,access.ilmimart.person,model_ilmimart_person,,1,1,1,1
+access_ilmimart_kasir,access.ilmimart.kasir,model_ilmimart_kasir,,1,1,1,1
+access_ilmimart_cleaningservice,access.ilmimart.cleaningservice,model_ilmimart_cleaningservice,,1,1,1,1
+access_ilmimart_supplier,access.ilmimart.supplier,model_ilmimart_supplier,,1,1,1,1
+access_ilmimart_penjualan,access.ilmimart.penjualan,model_ilmimart_penjualan,,1,1,1,1
+access_ilmimart_detailpenjualan,access.ilmimart.detailpenjualan,model_ilmimart_detailpenjualan,,1,1,1,1
+access_ilmimart_barangdatang,access.ilmimart.barangdatang,model_ilmimart_barangdatang,,1,1,1,1

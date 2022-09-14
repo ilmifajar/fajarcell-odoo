@@ -1,0 +1,31 @@
+<odoo>
+    <record id="report_supplier_xlsx" model="ir.actions.report">
+        <field name="name">supplier excel</field>
+        <field name="model">ilmimart.supplier</field>
+        <field name="report_type">xlsx</field>
+        <field name="report_name">ilmimart.report_supplier_xlsx</field>
+        <field name="report_file">ilmimart.report_supplier_xlsx</field>
+        <field name="binding_model_id" ref="model_ilmimart_supplier"/>
+        <field name="binding_type">report</field>
+    </record>
+
+    <record id="report_penjualan_xlsx" model="ir.actions.report">
+        <field name="name">penjualan excel</field>
+        <field name="model">ilmimart.penjualan</field>
+        <field name="report_type">xlsx</field>
+        <field name="report_name">ilmimart.report_penjualan_xlsx</field>
+        <field name="report_file">ilmimart.report_penjualan_xlsx</field>
+        <field name="binding_model_id" ref="model_ilmimart_penjualan"/>
+        <field name="binding_type">report</field>
+    </record>
+
+     <record id="report_faktur_pdf" model="ir.actions.report">
+        <field name="name">print faktur</field>
+        <field name="model">ilmimart.penjualan</field>
+        <field name="report_type">qweb-pdf</field>
+        <field name="report_name">ilmimart.report_faktur_pdf</field>
+        <field name="report_file">ilmimart.report_faktur_pdf</field>
+        <field name="binding_model_id" ref="model_ilmimart_penjualan"/>
+        <field name="binding_type">report</field>
+    </record>
+</odoo>
