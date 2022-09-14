@@ -35,8 +35,7 @@
         'views/konsumen_view.xml',
         'views/direksi_view.xml',
         'views/penjualan_view.xml',
-        'views/provider_view.xml', 
-        'wizard/produkdatang_wizard_view.xml', 
+        'views/provider_view.xml',  
     ],
     # only loaded in demonstration mode
     'demo': [
