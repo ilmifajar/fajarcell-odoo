@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+    <!-- ilmimart.kelompokbarang tree view -->
+    <record id="fajarcell_operatorproduk_view_tree" model="ir.ui.view">
+        <field name="name">ilmimart.kelompokbarang.view.tree</field>
+        <field name="model">fajarcell.operatorproduk</field>
+        <field name="arch" type="xml">
+            <tree>
+                <field name="name"/>
+                <field name="kode_operator"/>
+                <field name="kode_rak"/>
+                <field name="jml_item"/>
+                <field name="daftarisi"/>
+            </tree>
+        </field>
+    </record>
+
+    <!-- ilmimart.kelompokbarang form view -->
+    <record id="fajarcell_operatorproduk_view_form" model="ir.ui.view">
+        <field name="name">ilmimart.kelompokbarang.view.form</field>
+        <field name="model">fajarcell.operatorproduk</field>
+        <field name="arch" type="xml">
+            <form string="operator">
+                <sheet>
+                    <group name="kelompok" string="letak kelompok">
+                        <field name="name"/>
+                        <field name="kode_operator"/>
+                        <field name="jml_item"/>
+                    </group>
+                    <group name="rak" string="letak barang">
+                        <field name="kode_rak"/>
+                        <field name="produk_ids"/>
+                    </group>
+                </sheet>
+            </form>
+        </field>
+    </record>
+
+    <!-- ilmimart.kelompokbarang action window -->
+    <record id="fajarcell_operatorproduk_action" model="ir.actions.act_window">
+        <field name="name">operator produk</field>
+        <field name="type">ir.actions.act_window</field>
+        <field name="res_model">fajarcell.operatorproduk</field>
+        <field name="view_mode">tree,form</field>
+    </record>
+
+    <!-- This Menu Item must have a parent and an action -->
+    <menuitem id="fajarcell_operatorproduk_menu_act" 
+              name="kelompok barang" 
+              parent="fajarcell_produk_menu_categ" 
+              action="fajarcell_operatorproduk_action" 
+              sequence="10"/>
+
+</odoo>
