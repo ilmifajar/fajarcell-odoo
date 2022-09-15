@@ -1,1 +1,1 @@
-# fajarcell-odoo
+# fajarcell-odoo Project Training
