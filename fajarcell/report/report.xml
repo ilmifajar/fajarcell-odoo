@@ -1,0 +1,13 @@
+<odoo>
+    <record id="report_faktur_pdf" model="ir.actions.report">
+        <field name="name">print faktur</field>
+        <field name="model">fajarcell.penjualan</field>
+        <field name="report_type">qweb-pdf</field>
+        <field name="report_name">fajarcell.report_faktur_pdf</field>
+        <field name="report_file">fajarcell.report_faktur_pdf</field>
+        <field name="binding_model_id" ref="model_fajarcell_penjualan"/>
+        <field name="binding_type">report</field>
+    </record>
+    
+
+</odoo>
