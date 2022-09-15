@@ -1,0 +1,9 @@
+id,name,model_id:id,group_id:id,perm_read,perm_write,perm_create,perm_unlink
+access_fajarcell_produk,access.fajarcell_produk,model_fajarcell_produk,,1,1,1,1
+access_fajarcell_operatorproduk,access.fajarcell_operatorproduk,model_fajarcell_operatorproduk,,1,1,1,1
+access_fajarcell_person,access.fajarcell_person,model_fajarcell_person,,1,1,1,1
+access_fajarcell_kasir,access.fajarcell_kasir,model_fajarcell_kasir,,1,1,1,1
+access_fajarcell_cleaningservice,access.fajarcell_cleaningservice,model_fajarcell_cleaningservice,,1,1,1,1
+access_fajarcell_penjualan,access.fajarcell.penjualan,model_fajarcell_penjualan,,1,1,1,1
+access_fajarcell_detailpenjualan,access.fajarcell.detailpenjualan,model_fajarcell_detailpenjualan,,1,1,1,1
+access_fajarcell_provider,access.fajarcell.provider,model_fajarcell_provider,,1,1,1,1
